@@ -1,0 +1,35 @@
+#carousel-caption-fix {
+    text-align: inherit;
+}
+
+.about-home {
+    background: url(./skin/default/images/bg-line.png);
+    padding-top: 50px;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 13px;
+    text-align: center;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gridfull-width {
+    width: 100%;
+}
+
+.gridrow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.relative.Module:hover {
+    z-index: 990 !important;
+}
+
+.relative {
+    position: relative;
+}

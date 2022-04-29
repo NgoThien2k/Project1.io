@@ -1,0 +1,20 @@
+@media screen and (min-width: 992px) {
+    .nova-gallery-1 .gallery-list .item img {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.nova-project .cctitle a .lnr {
+    margin: 3px 0 0 10px;
+}
+
+.nvl-2 .Module-1294 .frm-wrap .form-group:nth-child(6) {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    header .main-nav ul>li {
+        margin-right: 15px !important;
+    }
+}
