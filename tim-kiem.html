@@ -721,66 +721,6 @@
                 });
                 //]]>
             </script>
-            <script type="text/javascript" src="/platform/js/search/search.js?h=3ad46dca"></script>
-            <script type="text/javascript" src="/platform/js/j2w/min/j2w.user.min.js?h=3ad46dca"></script>
-            <script type="text/javascript" src="/platform/js/j2w/min/j2w.agent.min.js?h=3ad46dca"></script>
-
-            <script type="text/javascript" src="/platform/js/jquery/js.cookie-2.2.1.min.js"></script>
-            <script type="text/javascript" src="/platform/js/jquery/jquery.lightbox_me.js"></script>
-            <script type="text/javascript" src="/platform/js/jquery/jquery.placeholder.2.0.7.min.js"></script>
-            <script type="text/javascript" src="/js/override.js?locale=vi_VN&amp;i=1279788819"></script>
-            <script type="text/javascript">
-                //<![CDATA[
-                if (Cookies && !Cookies.get('rmk12')) {
-                    $('.ukCookiePolicy').show();
-
-                    $('#cookie-close').click(function() {
-                        closeBanner();
-                    });
-
-                    $('#cookie-acknowledge').click(function() {
-                        closeBanner(true);
-                    });
-
-                    /**
-                     * Closes the cookie banner, optionally dropping a cookie to keep the banner from reappearing.
-                     * @param {boolean=} bDropCookie - If true, a cookie will be dropped to prevent the banner from
-                     *     being shown again.
-                     */
-                    function closeBanner(bDropCookie) {
-                        if (bDropCookie) {
-                            Cookies.set('rmk12', 1, {
-                                expires: (function() {
-                                    var i = new Date;
-                                    i.setFullYear(i.getFullYear() + 30);
-                                    return i;
-                                }())
-                            });
-                        }
-
-                        $('div.ukCookiePolicy').remove();
-
-                        /* When the banner is removed, the fixed header may need to be resized. If there is no fixed
-                        header, this event goes unhandled. Please see header.xhtml. */
-                        $(document).trigger('resizeFixedHeader');
-
-                        $("#diversion").focus();
-                    }
-                }
-                //]]>
-            </script>
-            <script type="text/javascript" src="/platform/js/j2w/min/options-search.min.js?h=3ad46dca"></script>
-            <script type="application/javascript">
-                //<![CDATA[
-                var j2w = j2w || {};
-                j2w.search = j2w.search || {};
-                j2w.search.options = {
-                    isOpen: false,
-                    facets: ["department"],
-                    showPicklistAllLocales: false
-                };
-                //]]>
-            </script><!-- Jobs2Web, Inc. Site Scope Monitoring Comment - PLO -->
 </body>
 
 </html>
